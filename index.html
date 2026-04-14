@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>测测你在短剧里是什么角色</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="landing-page" class="page active">
+    <div class="landing-content">
+      <div class="landing-emoji">🎬</div>
+      <h1 class="landing-title">测测你在短剧里是什么角色</h1>
+      <p class="landing-subtitle">从30道题库中随机抽取10题，5个维度深度解析<br>你是歪嘴龙王还是白莲花女配？一测便知！</p>
+      <div class="landing-features">
+        <div class="feature-item">
+          <div class="feature-number">10</div>
+          <div class="feature-label">道随机题</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">5</div>
+          <div class="feature-label">个维度</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">14</div>
+          <div class="feature-label">种角色</div>
+        </div>
+      </div>
+      <button id="start-btn">开始测试</button>
+    </div>
+  </div>
+
+  <div id="quiz-page" class="page">
+    <div class="progress-bar-container">
+      <div class="progress-info">
+        <span class="progress-label">测试进度</span>
+        <span id="progress-text">1 / 14</span>
+      </div>
+      <div class="progress-track">
+        <div id="progress-fill"></div>
+      </div>
+    </div>
+    <div class="quiz-content">
+      <div id="question-text"></div>
+      <div id="options-container"></div>
+    </div>
+  </div>
+
+  <div id="result-page" class="page">
+    <div class="result-content">
+      <div class="result-reveal">
+        <div class="result-code" id="result-code"></div>
+        <h1 id="result-name"></h1>
+        <div id="result-catchphrase"></div>
+      </div>
+      <div id="result-description"></div>
+      <div class="radar-section">
+        <div class="radar-title">五维度分析</div>
+        <canvas id="radar-chart"></canvas>
+      </div>
+      <div class="result-actions">
+        <button id="restart-btn">再测一次</button>
+        <button id="share-btn">分享结果</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="share-toast"></div>
+
+  <script src="js/questions.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
